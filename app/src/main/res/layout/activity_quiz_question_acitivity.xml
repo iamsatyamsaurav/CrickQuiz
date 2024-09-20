@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F1DEC6"
+    tools:context=".QuizQuestionAcitivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_question"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#363a43"
+            tools:text="Which Indian cricketer is shown in this image, known for scoring the highest individual score in Test cricket for India?"
+        />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="16dp"
+            tools:src="@drawable/ic_launcher_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+            
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="50dp"
+                android:max="10"
+                app:indicatorColor="#179BAE"
+                android:indeterminate="false"
+                android:progress="7"/>
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                tools:text="0/10"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:textColor="#7a8089"
+            android:background="@drawable/option_bg"
+            tools:text="Apple"
+            />
+
+        <TextView
+            android:id="@+id/tv_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:textColor="#7a8089"
+            android:background="@drawable/option_bg"
+            tools:text="Apple"
+            />
+
+        <TextView
+            android:id="@+id/tv_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:textColor="#7a8089"
+            android:background="@drawable/option_bg"
+            tools:text="Apple"
+            />
+
+        <TextView
+            android:id="@+id/tv_option_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:textColor="#7a8089"
+            android:background="@drawable/option_bg"
+            tools:text="Apple"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_submit"
+            android:text="SUBMIT"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FF8343"
+            android:textSize="18sp"
+
+            />
+
+
+    </LinearLayout>
+</ScrollView>
